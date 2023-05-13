@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SplashFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.damlacim.fitme.feature.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/RegisterFragment" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_main_nav_graph"
+            app:destination="@id/main_nav_graph" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.damlacim.fitme.feature.register.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_RegisterFragment_to_main_nav_graph"
+            app:destination="@id/main_nav_graph" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.damlacim.fitme.feature.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_Splash_to_main_nav_graph"
+            app:destination="@id/main_nav_graph" />
+        <action
+            android:id="@+id/action_SplashFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+
+    <include app:graph="@navigation/main_nav_graph" />
+</navigation>

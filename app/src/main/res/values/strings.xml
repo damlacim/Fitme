@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fitme</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+   <string name="msg_hello">Hi,there! &#x1f44b;</string>
+
+
+    <string name="login">Login</string>
+    <string name="have_no_account_register">Have no account? Register</string>
+    <string name="username">Username</string>
+    <string name="register_with_fitme">Register with Fitme</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="msg_already_have_an">Already have an account? </string>
+    <string name="msg_are_you_sure_yo">Are you sure you want to log out?</string>
+
+
+</resources>
